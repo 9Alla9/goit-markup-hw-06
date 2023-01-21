@@ -188,7 +188,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container {
-  width: 1158px;
+  width: 1440px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -248,7 +248,6 @@ img {
   display: flex;
   gap: 24px;
 }
-/*------.about-item --------*/
 
 /*------user--------*/
 
@@ -344,6 +343,7 @@ img {
 .clients-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 .clients-item {
   border: 1px solid #8e8f99;
@@ -411,6 +411,7 @@ img {
   margin-bottom: 16px;
   font-weight: 500;
   color: #ffffff;
+  font-size: 16px;
 }
 .footer-link {
   display: flex;
@@ -553,21 +554,18 @@ img {
   top: 50%;
   left: 50%;
   width: 408px;
-  min-height: 576px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
+  padding: 24px;
 }
 .backdrob.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
 .modal-close {
-  position: absolute;
-  top: 24px;
-  right: 24px;
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
@@ -577,6 +575,8 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  display: block;
+  margin-left: auto;
 }
 .modal-close:hover {
   background: #404bbf;
@@ -586,4 +586,157 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2e2f42;
+  text-align: center;
+  margin-bottom: 14px;
+  margin-top: 24px;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding-left: 38px;
+  color: #8e8f99;
+  outline: none;
+}
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
+.modal-input:focus + .input-icon {
+  fill: #4d5ae5;
+}
+.input-text {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+.input-icon {
+  position: absolute;
+  left: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-wrap {
+  position: relative;
+}
+.modal-comment {
+  width: 100%;
+  height: 100px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  padding-left: 16px;
+  padding-top: 8px;
+  resize: none;
+}
+.modal-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(117, 117, 117, 0.5);
+}
+.link-policy {
+  margin-left: 3px;
+}
+.check-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #757575;
+  display: flex;
+}
+.check-text span {
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.input-check:checked + .check-text span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+.filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-sen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 169px;
+  margin-top: 24px;
+  color: #ffffff;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 16px 32px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.online {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+.online-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+  line-height: 24px;
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 24px;
+}
+.online-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.btn-subscribe {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  flex-direction: row;
+  padding: 8px 24px;
+  gap: 16px;
+  background: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-subscribe:hover {
+  background: #404bbf;
+  fill: #ffffff;
 }
