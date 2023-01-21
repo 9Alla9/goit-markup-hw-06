@@ -246,6 +246,7 @@ img {
 
 .about-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -430,6 +431,7 @@ img {
 .footer div {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
 }
 .footer-div {
   flex-direction: column;
@@ -489,6 +491,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  justify-content: center;
 }
 .container-text {
   background: #ffffff;
