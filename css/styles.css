@@ -204,6 +204,7 @@ img {
   align-items: flex-start;
   gap: 24px;
 }
+
 /*------.text-item-----*/
 
 .text-title {
@@ -442,7 +443,9 @@ img {
 .footer-icon {
   fill: #f4f4fd;
 }
+
 /* ----features--- */
+
 .Portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -551,6 +554,9 @@ img {
   background-color: #2e2f4249;
   transition: opacity 250ms linear, visibility 250ms linear;
 }
+
+/* ----------modal---------- */
+
 .modal {
   position: absolute;
   top: 50%;
